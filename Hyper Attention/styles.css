@@ -1,0 +1,354 @@
+body{
+  text-align: justify;
+  width: 100%; height: 100%;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 1.3em;
+
+  animation: colorchange 1s infinite; /* animation-name followed by duration in seconds*/
+         /* you could also use milliseconds (ms) or something like 2.5s */
+      -webkit-animation: colorchange 1s infinite; /* Chrome and Safari */
+    }
+
+    @keyframes colorchange
+    {
+      0%   {background: yellow;}
+      25%  {background: white;}
+      50%  {background: yellow;}
+      75%  {background: white;}
+      100% {background: yellow;}
+    }
+
+    @-webkit-keyframes colorchange /* Safari and Chrome - necessary duplicate */
+    {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      75%  {background: green;}
+      100% {background: red;}
+    }
+
+    animation: repeat;
+  }
+
+  .wrapper{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    max-width: 100%;
+    margin:1%;
+  }
+
+  .grid {
+  display: grid;
+  grid-template-columns: 150px auto 150px;
+  grid-template-rows: repeat(3, 100px);
+  grid-gap: 1em;
+}
+
+header,
+aside,
+article,
+footer {
+  /* background: ; */
+  padding: 1em;
+}
+
+header {
+  /* Start on Row 1 */
+  grid-row: 1;
+  /* Start on the first column line and extend all the to the last column line */
+  grid-column: 1 / 4;
+}
+
+.sidebar-left {
+  /* Start on Row 2 */
+  grid-row: 2;
+  /* Start on the first column line and stop at the next column line */
+  grid-column: 1 / 2;
+}
+
+article {
+  /* Start on Row 2 */
+  grid-row: 2;
+  /* Start on the second column line and stop at the third column line */
+  grid-column: 2 / 3;
+}
+
+.sidebar-right {
+  /* Start on Row 2 */
+  grid-row: 2;
+  /* Start on the third column line and stop at the last column line */
+  grid-column: 3 / 4;
+}
+
+footer {
+  /* Start on Row 1 */
+  grid-row: 3;
+  /* Start on the first column line and extend all the to the last column line */
+  grid-column: 1 / 4;
+}
+
+  .par1{
+
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+    animation: fadeIn 5s infinite;
+    animation-delay: 0.1s;
+  }
+  @keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+
+  }
+
+
+
+  .par2{
+    font-size: .5em;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+    animation: fadeIn 5s infinite;
+    animation-delay: .2s;
+  }
+  @keyframes fadeIn {
+      0%{
+          opacity: 0;
+      }
+      100%{
+          opacity: 1;
+      }
+
+
+  }
+
+  .par3{
+    font-size: .5em;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+        animation: fadeIn 5s infinite;
+        animation-delay: .3s;
+      }
+      @keyframes fadeIn {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+
+  }
+
+  .par4{
+    font-size: 2em;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+
+        animation: fadeIn 5s infinite;
+        animation-delay: .4s;
+      }
+      @keyframes fadeIn {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+
+  }
+
+  .par5{
+    font-size: 1em;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+
+        animation: fadeIn 5s infinite;
+        animation-delay: .5s;
+      }
+      @keyframes fadeIn {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+
+  }
+
+  .par6{
+    font-size: .5em;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+
+        animation: fadeIn 5s infinite;
+        animation-delay: .6s;
+      }
+      @keyframes fadeIn {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+
+  }
+
+  .par7{
+    font-size: 1em;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+
+        animation: fadeIn 5s infinite;
+        animation-delay: .7s;
+      }
+      @keyframes fadeIn {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+
+  }
+
+  .par8{
+    font-size: 1em;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+
+        animation: fadeIn 5s infinite;
+        animation-delay: .8s;
+      }
+      @keyframes fadeIn {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+
+  }
+
+  .par9{
+    font-size: .5em;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+
+        animation: fadeIn 5s infinite;
+        animation-delay: .9s;
+      }
+      @keyframes fadeIn {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+
+  }
+
+  .par10{
+    font-size: .3em;
+    width: 80%;
+    height: auto;
+    margin: 2px;
+
+
+        animation: fadeIn 5s infinite;
+        animation-delay: .10s;
+      }
+      @keyframes fadeIn {
+          0%{
+              opacity: 0;
+          }
+          100%{
+              opacity: 1;
+          }
+
+  }
+
+
+  h3{
+    align-content: center;
+    margin-left: 20%;
+    color: #00aeef;
+  }
+
+h3:hover{
+  color: #fad5e5;
+}
+
+#flower {
+    animation: blink 2s infinite;
+    display: block;
+    margin-left: 30%;
+    width: 40%;
+}
+#flower2 {
+    display: block;
+    margin-left: 46%;
+    width: 10%;
+
+}
+@keyframes blink {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+       100%{
+        opacity: 1;
+    }
+}
+img{
+    max-width: 600px;
+            }
+a{
+  color: #00aeef;
+}
+
+p{
+  font-size: 50px;
+}
+
+h1{
+  text-align: center;
+  font-size: 4em;
+}
+
+a:hover {
+    color: #fad5e5;
+}
+
+a:link {
+    text-decoration: none;
+}
+/* ul{
+  .paragraph {
+      animation-duration: 3s;
+  } */
+
+}

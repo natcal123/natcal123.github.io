@@ -1,0 +1,95 @@
+h1{
+  border: 4px white;
+  padding: 4px;
+
+}
+
+html{
+  border: solid;
+
+}
+
+body{
+  background-color: darkorange;
+  font-size: 12pt;
+  margin: 20px;
+  border-style: solid;
+  border-width: thick;
+  border-color: beige;
+
+}
+
+h1{
+  float: left;
+  padding-top: 4px;
+  padding-right: 4px;
+  padding-left: 4px;
+  padding-bottom: 4px;
+  font-size: 20px;
+  position: fixed;
+  color: #352c23;
+}
+
+
+
+.wrapping{
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-column: auto;
+
+}
+
+.left{
+  width: 250px;
+  height: 1391px;
+  float: left;
+  background: beige;
+  display: inline-grid;
+}
+
+.right{
+  width: 720px;
+  height: 1391px;
+  display: inline-grid;
+  position: relative;
+  margin-left: 10px;
+  margin-top: 200px;
+}
+
+/* div.square{
+  width: 1100px;
+  height: 1100px;
+  background: darkorange;
+  float: right;
+} */
+
+.oval{
+    shape-outside: ellipse(100px 200px at 50% 50%);
+    clip-path: ellipse(100px 200px at 50% 50%);
+    width: 300px;
+    height: 500px;
+    opacity: 100%;
+    background-color: beige;
+    width: 90%;
+
+
+  }
+
+  footer {
+    height: 120px;
+
+
+  }
+
+  html{
+
+  }
+  /* width: 100px;
+  height: 200px;
+  background: beige;
+  -moz-border-radius: 100px / 50px;
+  -webkit-border-radius: 100px / 50px;
+  border-radius: 100px / 50px;
+  margin: 50%;
+  display:block;
+} */

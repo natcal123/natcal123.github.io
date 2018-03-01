@@ -1,0 +1,45 @@
+.sidebar {
+  /* width:15%; */
+  /* height:900px; */
+  float:left;
+  list-style-type: none;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+a:link {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+.main {
+  margin:auto;
+  width: 57%;
+  /* float: left; */
+}
+
+/* .video country-us{
+
+    width: 100%;
+    height: auto;
+
+} */
+/* iframe{
+  width:60%;
+  height:auto;
+
+
+} */

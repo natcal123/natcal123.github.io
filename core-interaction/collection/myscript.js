@@ -62,22 +62,6 @@ function handleBtnHoverfrance() {
   });
 }
 
-var netherlandsButton = document.getElementById("netherlandsButton");
-
-netherlandsButton.addEventListener("mouseenter", handleBtnHovernetherlands);
-
-function handleBtnHovernetherlands() {
-  var items = document.querySelectorAll('.video');
-  items.forEach(function(item) {
-    item.style.display = "none";
-  });
-  var itemsshow = document.querySelectorAll('.country-netherlands');
-  itemsshow.forEach(function(item) {
-    item.style.display = 'inline-block';
-    // item.classList.add('bigger-videos');
-  });
-}
-
 var austriaButton = document.getElementById("austriaButton");
 
 austriaButton.addEventListener("mouseenter", handleBtnHoveraustria);

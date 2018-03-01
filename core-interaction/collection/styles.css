@@ -37,6 +37,9 @@ a:visited {
   width:15%;
   float:left;
   list-style-type: none;
+  line-height: 1.6;
+  font-family: Helvetica;
+
 }
 
 .main {
@@ -46,12 +49,14 @@ a:visited {
 
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Helvetica;
+
 }
 
 .header {
     text-align: center;
     padding: 32px;
+    font-family: Helvetica;
 }
 
 .row {
@@ -61,6 +66,7 @@ body {
     flex-wrap: wrap;
     padding: 0 4px;
 }
+
 
 
 /* Create four equal columns that sits next to each other */

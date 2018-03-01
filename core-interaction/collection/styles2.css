@@ -3,16 +3,25 @@
   /* height:900px; */
   float:left;
   list-style-type: none;
+  line-height: 1.6;
+  font-family: Helvetica;
 }
 
 body {
     margin: 0;
-    font-family: Arial;
+    font-family: Helvetica;
+}
+
+.about{
+  margin:auto;
+  width: 57%;
+  line-height: 1.6;
 }
 
 .header {
     text-align: center;
     padding: 32px;
+    font-family: Helvetica;
 }
 
 a:link {

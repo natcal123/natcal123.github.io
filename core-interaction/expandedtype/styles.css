@@ -1,0 +1,61 @@
+#pos {
+  font-family:
+  'Open Sans bold', sans-serif;
+  font-size: 100pt;
+  color: #f89f49;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 33%;
+  padding-top: 20%;
+  padding-right: 20%;
+  padding-bottom: 20%;
+
+}
+
+#neg {
+  font-family:
+  'Open Sans light', sans-serif;
+  font-size: 100pt;
+  color: #24408e;
+  position: absolute;
+  top: -40px;
+  left: -150%;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 33%;
+  padding-top: 20%;
+  padding-right: 20%;
+  padding-bottom: 20%;
+}
+
+#pair1:hover #neg {
+  animation: slide 1.3s;
+  animation-fill-mode: forwards;
+}
+
+#pair1{
+  position: relative;
+}
+
+.slide {
+  animation: move 1s infinite ease-in-out;
+}
+
+@keyframes slide {
+    0%{
+      left:-150%;
+    }
+
+    80%{
+      left: 0%;
+      color: #24408e;
+    }
+
+    100%{
+      left: 0%;
+      color: #f89f49;
+    }
+
+
+}

@@ -83,14 +83,16 @@
 #pos.pair-1{
   position: relative;
   color: #ff6600;
+  opacity: .7;
+  padding-left: 28%;
 }
 
 #neg.pair-1{
   color: #00a3c1;
-  animation: slide1 1.3s;
+  animation: slide1 5s;
   animation-fill-mode: forwards;
-
-
+  opacity: .7;
+  padding-left: 31%;
 }
 
 @keyframes slide1 {
@@ -117,12 +119,15 @@
   #pos.pair-2{
     position: relative;
     color: #ff9400;
+    opacity: .7;
+    padding-left: 25%;
   }
 
   #neg.pair-2{
     color: #0061b5;
-    animation: slide2 1.3s;
+    animation: slide2 5s;
     animation-fill-mode: forwards;
+    opacity: .7;
   }
 
   @keyframes slide2 {
@@ -149,12 +154,15 @@
     #pos.pair-3{
       position: relative;
       color: #ffc600;
+      opacity: .7;
+      padding-left: 25%;
     }
 
     #neg.pair-3{
       color: #0012a5;
-      animation: slide3 1.3s;
+      animation: slide3 5s;
       animation-fill-mode: forwards;
+      opacity: .7;
     }
 
     @keyframes slide3 {
@@ -182,12 +190,16 @@
       #pos.pair-4{
         position: relative;
         color: #ffff00;
+        opacity: .7;
+        padding-left: 25%;
       }
 
       #neg.pair-4{
         color: #6300a5;
-        animation: slide4 1.3s;
+        animation: slide4 5s;
         animation-fill-mode: forwards;
+        opacity: .7;
+        padding-left: 38%;
       }
 
       @keyframes slide4 {
@@ -216,13 +228,15 @@
             position: relative;
             color: #ff9400;
             padding-left: 19%;
+            opacity: .7;
           }
 
           #neg.pair-5{
             color: #c5007c;
-            animation: slide5 1.3s;
+            animation: slide5 5s;
             animation-fill-mode: forwards;
             padding-left: 19%;
+            opacity: .7;
           }
 
           @keyframes slide5 {
@@ -251,13 +265,15 @@
               position: relative;
               color: #0fad00;
               padding-left: 26%;
+              opacity: .7;
             }
 
             #neg.pair-6{
               color: #ff0000;
-              animation: slide6 1.3s;
+              animation: slide6 5s;
               animation-fill-mode: forwards;
               padding-left: 26%;
+              opacity: .7;
             }
 
             @keyframes slide6 {
@@ -286,13 +302,15 @@
                 position: relative;
                 color: #ff6600;
                 padding-left: 24%;
+                opacity: .7;
               }
 
               #neg.pair-7{
                 color: #00a3c1;
-                animation: slide7 1.3s;
+                animation: slide7 5s;
                 animation-fill-mode: forwards;
                 padding-left: 24%;
+                opacity: .7;
               }
 
               @keyframes slide7 {
@@ -321,13 +339,15 @@
                   position: relative;
                   color: #ff9400;
                   padding-left: 22%;
+                  opacity: .7;
                 }
 
                 #neg.pair-8{
                   color: #0061b5;
-                  animation: slide8 1.3s;
+                  animation: slide8 5s;
                   animation-fill-mode: forwards;
-                  padding-left: 22%;
+                  padding-left: 25%;
+                  opacity: .7;
                 }
 
                 @keyframes slide8 {
@@ -355,12 +375,16 @@
                   #pos.pair-9{
                     position: relative;
                     color: #ffc600;
+                    padding-left: 26%;
+                    opacity: .7;
                   }
 
                   #neg.pair-9{
                     color: #0012a5;
-                    animation: slide9 1.3s;
+                    animation: slide9 5s;
                     animation-fill-mode: forwards;
+                    opacity: .7;
+                    padding-left: 35%;
                   }
 
                   @keyframes slide9 {
@@ -387,13 +411,16 @@
                     #pos.pair-10{
                       position: relative;
                       color: #ffff00;
+                      padding-left: 24%;
+                      opacity: .7;
                     }
 
                     #neg.pair-10{
                       color: #6300a5;
-                      animation: slide10 1.3s;
+                      animation: slide10 5s;
                       animation-fill-mode: forwards;
-                      padding-left: 34%;
+                      padding-left: 40%;
+                      opacity: .7;
                     }
 
                     @keyframes slide10 {
@@ -420,12 +447,16 @@
                       #pos.pair-11{
                         position: relative;
                         color: #8cc700;
+                        opacity: .7;
+                        padding-left: 30%;
                       }
 
                       #neg.pair-11{
                         color: #c5007c;
-                        animation: slide11 1.3s;
+                        animation: slide11 5s;
                         animation-fill-mode: forwards;
+                        opacity: .7;
+                        padding-left: 38%;
                       }
 
                       @keyframes slide11 {

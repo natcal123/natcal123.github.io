@@ -2,7 +2,7 @@
   font-family:
   'Open Sans bold', sans-serif;
   font-size: 100pt;
-  color: #f89f49;
+  /* color: #f89f49; */
   position: absolute;
   text-align: center;
   text-transform: uppercase;
@@ -17,7 +17,7 @@
   font-family:
   'Open Sans light', sans-serif;
   font-size: 100pt;
-  color: #24408e;
+  /* color: #24408e; */
   position: absolute;
   top: -40px;
   left: -150%;
@@ -29,7 +29,7 @@
   padding-bottom: 20%;
 }
 
-#pair1:hover #neg {
+#pos:hover #neg {
   animation: slide 1.3s;
   animation-fill-mode: forwards;
 }
@@ -42,7 +42,8 @@
   animation: move 1s infinite ease-in-out;
 }
 
-@keyframes slide {
+
+/* @keyframes slide {
     0%{
       left:-150%;
     }
@@ -56,6 +57,389 @@
       left: 0%;
       color: #f89f49;
     }
+} */
+
+/* @keyframes slide {
+    0%{
+      left:-150%;
+    }
+
+    80%{
+      left: 0%;
+      color: #ff6600;
+    }
+
+    100%{
+      left: 0%;
+      color: #00a3c1;
+    }
+  } */
+
+.pair-1{
+  /* animation: slide1 1.3s;
+  animation-fill-mode: forwards; */
+}
+
+#pos.pair-1{
+  position: relative;
+  color: #ff6600;
+}
+
+#neg.pair-1{
+  color: #00a3c1;
+  animation: slide1 1.3s;
+  animation-fill-mode: forwards;
 
 
 }
+
+@keyframes slide1 {
+    0%{
+      left:-150%;
+    }
+
+    80%{
+      left: 0%;
+      color: #00a3c1;
+    }
+
+    100%{
+      left: 0%;
+      color: #ff6600;
+    }
+  }
+
+  .pair-2{
+    /* animation: slide2 1.3s;
+    animation-fill-mode: forwards; */
+  }
+
+  #pos.pair-2{
+    position: relative;
+    color: #ff9400;
+  }
+
+  #neg.pair-2{
+    color: #0061b5;
+    animation: slide2 1.3s;
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes slide2 {
+      0%{
+        left:-150%;
+      }
+
+      80%{
+        left: 0%;
+        color: #0061b5;
+      }
+
+      100%{
+        left: 0%;
+        color: #ff9400;
+      }
+    }
+
+    .pair-3{
+      /* animation: slide2 1.3s;
+      animation-fill-mode: forwards; */
+    }
+
+    #pos.pair-3{
+      position: relative;
+      color: #ffc600;
+    }
+
+    #neg.pair-3{
+      color: #0012a5;
+      animation: slide3 1.3s;
+      animation-fill-mode: forwards;
+    }
+
+    @keyframes slide3 {
+        0%{
+          left:-150%;
+        }
+
+        80%{
+          left: 0%;
+          color: #0012a5;
+        }
+
+        100%{
+          left: 0%;
+          color: #ffc600;
+        }
+      }
+
+
+      .pair-4{
+        /* animation: slide2 1.3s;
+        animation-fill-mode: forwards; */
+      }
+
+      #pos.pair-4{
+        position: relative;
+        color: #ffff00;
+      }
+
+      #neg.pair-4{
+        color: #6300a5;
+        animation: slide4 1.3s;
+        animation-fill-mode: forwards;
+      }
+
+      @keyframes slide4 {
+          0%{
+            left:-150%;
+          }
+
+          80%{
+            left: 0%;
+            color: #6300a5;
+          }
+
+          100%{
+            left: 0%;
+            color: #ffff00;
+          }
+        }
+
+
+          .pair-5{
+            /* animation: slide2 1.3s;
+            animation-fill-mode: forwards; */
+          }
+
+          #pos.pair-5{
+            position: relative;
+            color: #ff9400;
+            padding-left: 19%;
+          }
+
+          #neg.pair-5{
+            color: #c5007c;
+            animation: slide5 1.3s;
+            animation-fill-mode: forwards;
+            padding-left: 19%;
+          }
+
+          @keyframes slide5 {
+              0%{
+                left:-150%;
+              }
+
+              80%{
+                left: 0%;
+                color: #c5007c;
+              }
+
+              100%{
+                left: 0%;
+                color: #ff9400;
+              }
+            }
+
+
+            .pair-6{
+              /* animation: slide2 1.3s;
+              animation-fill-mode: forwards; */
+            }
+
+            #pos.pair-6{
+              position: relative;
+              color: #0fad00;
+              padding-left: 26%;
+            }
+
+            #neg.pair-6{
+              color: #ff0000;
+              animation: slide6 1.3s;
+              animation-fill-mode: forwards;
+              padding-left: 26%;
+            }
+
+            @keyframes slide6 {
+                0%{
+                  left:-150%;
+                }
+
+                80%{
+                  left: 0%;
+                  color: #ff0000;
+                }
+
+                100%{
+                  left: 0%;
+                  color: #0fad00;
+                }
+              }
+
+
+              .pair-7{
+                /* animation: slide2 1.3s;
+                animation-fill-mode: forwards; */
+              }
+
+              #pos.pair-7{
+                position: relative;
+                color: #ff6600;
+                padding-left: 24%;
+              }
+
+              #neg.pair-7{
+                color: #00a3c1;
+                animation: slide7 1.3s;
+                animation-fill-mode: forwards;
+                padding-left: 24%;
+              }
+
+              @keyframes slide7 {
+                  0%{
+                    left:-150%;
+                  }
+
+                  80%{
+                    left: 0%;
+                    color: #00a3c1;
+                  }
+
+                  100%{
+                    left: 0%;
+                    color: #ff6600;
+                  }
+                }
+
+
+                .pair-8{
+                  /* animation: slide2 1.3s;
+                  animation-fill-mode: forwards; */
+                }
+
+                #pos.pair-8{
+                  position: relative;
+                  color: #ff9400;
+                  padding-left: 22%;
+                }
+
+                #neg.pair-8{
+                  color: #0061b5;
+                  animation: slide8 1.3s;
+                  animation-fill-mode: forwards;
+                  padding-left: 22%;
+                }
+
+                @keyframes slide8 {
+                    0%{
+                      left:-150%;
+                    }
+
+                    80%{
+                      left: 0%;
+                      color: #0061b5;
+                    }
+
+                    100%{
+                      left: 0%;
+                      color: #ff9400;
+                    }
+                  }
+
+
+                  .pair-9{
+                    /* animation: slide2 1.3s;
+                    animation-fill-mode: forwards; */
+                  }
+
+                  #pos.pair-9{
+                    position: relative;
+                    color: #ffc600;
+                  }
+
+                  #neg.pair-9{
+                    color: #0012a5;
+                    animation: slide9 1.3s;
+                    animation-fill-mode: forwards;
+                  }
+
+                  @keyframes slide9 {
+                      0%{
+                        left:-150%;
+                      }
+
+                      80%{
+                        left: 0%;
+                        color: #0012a5;
+                      }
+
+                      100%{
+                        left: 0%;
+                        color: #ffc600;
+                      }
+                    }
+
+                    .pair-10{
+                      /* animation: slide2 1.3s;
+                      animation-fill-mode: forwards; */
+                    }
+
+                    #pos.pair-10{
+                      position: relative;
+                      color: #ffff00;
+                    }
+
+                    #neg.pair-10{
+                      color: #6300a5;
+                      animation: slide10 1.3s;
+                      animation-fill-mode: forwards;
+                      padding-left: 34%;
+                    }
+
+                    @keyframes slide10 {
+                        0%{
+                          left:-150%;
+                        }
+
+                        80%{
+                          left: 0%;
+                          color: #6300a5;
+                        }
+
+                        100%{
+                          left: 0%;
+                          color: #ffff00;
+                        }
+                      }
+
+                      .pair-11{
+                        /* animation: slide2 1.3s;
+                        animation-fill-mode: forwards; */
+                      }
+
+                      #pos.pair-11{
+                        position: relative;
+                        color: #8cc700;
+                      }
+
+                      #neg.pair-11{
+                        color: #c5007c;
+                        animation: slide11 1.3s;
+                        animation-fill-mode: forwards;
+                      }
+
+                      @keyframes slide11 {
+                          0%{
+                            left:-150%;
+                          }
+
+                          80%{
+                            left: 0%;
+                            color: #c5007c;
+                          }
+
+                          100%{
+                            left: 0%;
+                            color: #8cc700;
+                          }
+                        }

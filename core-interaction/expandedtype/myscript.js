@@ -53,6 +53,14 @@ function changeWord() {
     clicks = 0;
   }
 
+// var neg = document.getElementById('neg');
+// if (neg.contains("pair-1")) {
+//   neg.add(".transform");
+// }
+
+// $("#pos").('.transform').toggleClass('transform-active');
+
+
   // var my_colors = [
   //   ['#ff6600', '#00a3c1'],
   //   ['#ff9400', '#0061b5'],

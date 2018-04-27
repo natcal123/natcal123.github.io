@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Swipe Pages</title>
+    <style>
+      html {
+        font-size: 62.5%;
+      }
+
+      body {
+        font-size: 4rem;
+        color: #020202;
+      }
+
+      header {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+
+      nav {
+        text-align: center;
+      }
+
+      .nav-button {
+        margin: 0 2rem;
+        padding: 2rem;
+      }
+
+      .nav-button.active {
+        color: red;
+      }
+
+      .swipe {
+          width: 99vw;
+          font-size: 6rem;
+          height: 100vh;
+          position: relative;
+          text-align: center;
+      }
+
+      .page {
+          padding: 3rem;
+          background: #dedede;
+          display: none;
+      }
+
+      .page.active {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a class="nav-button page-1 active">
+          Page 1
+        </a>
+        <a class="nav-button page-2">
+          Page 2
+        </a>
+        <a class="nav-button page-3">
+          Page 3
+        </a>
+      </nav>
+    </header>
+    <div class="swipe">
+      <div class="page page-1 active">
+        PAGE 1
+      </div>
+      <div class="page page-2">
+        PAGE 2
+      </div>
+      <div class="page page-3">
+        PAGE 3
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript" src="library.js"></script>
+  <script type="text/javascript">
+    var currentPage = 1;
+    var totalPages = 3;
+
+    var swipeZone = document.querySelector('.swipe');
+
+    swipedetect(swipeZone, function(direction){
+      // direction contains either "none", "left", "right", "top", or "down"
+      console.log('swiped ' + direction);
+
+      if (direction == 'left') {
+        if (currentPage <= 1) {
+          pageNumber = 1;
+        } else {
+          currentPage = currentPage - 1;
+        }
+
+        console.log(currentPage);
+        showPage('page-' + currentPage);
+      }
+
+      if (direction == 'right') {
+        if (currentPage >= totalPages) {
+          currentPage = totalPages;
+        } else {
+          currentPage = currentPage + 1;
+        }
+
+        console.log(currentPage);
+        showPage('page-' + currentPage);
+      }
+    });
+
+    var navButton1 = document.querySelector('.nav-button.page-1');
+    var navButton2 = document.querySelector('.nav-button.page-2');
+    var navButton3 = document.querySelector('.nav-button.page-3');
+
+    navButton1.addEventListener('click', function() {
+      showPage('page-1');
+    })
+
+    navButton2.addEventListener('click', function() {
+      showPage('page-2');
+    })
+
+    navButton3.addEventListener('click', function() {
+      showPage('page-3');
+    })
+  </script>
+</html>

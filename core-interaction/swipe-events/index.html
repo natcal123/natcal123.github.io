@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Swipe Events</title>
+    <style>
+        .swipe {
+            width: 100vw;
+            font-size: 6rem;
+            height: 100vh;
+            background: #dedede;
+            text-align: center;
+            padding: 10rem;
+        }
+
+        .swipe.left {
+          background: blue;
+          animation-duration: 2s;
+        }
+
+        .swipe.right {
+          background: red;
+          animation-duration: 2s;
+        }
+
+        .page {
+          display: none;
+          position: absolute;
+          top: 0;
+          bottom:0;
+        }
+
+    </style>
+  </head>
+  <body>
+    <div class="swipe">
+      <div class="page page-1">
+        hi 1
+      </div>
+    <div class="page page-2">
+      hi 2
+    </div>
+      </div>
+  </body>
+  <script type="text/javascript" src="library.js"></script>
+  <script type="text/javascript">
+    var swipeZone = document.querySelector('.swipe');
+
+    swipedetect(swipeZone, function(direction){
+        // direction contains either "none", "left", "right", "top", or "down"
+        swipeZone.innerHTML = 'Swiped <span>' + direction +'</span>';
+
+        if (direction == 'left'){
+          removeClassFrom('.swipe', 'right');
+            addClassTo('.swipe', 'left');
+        }
+
+        if (direction == 'right'){
+          removeClassFrom('.swipe', 'left');
+            addClassTo('.swipe', 'right');
+        }
+    });
+  </script>
+</html>

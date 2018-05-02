@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet">
     <meta charset="UTF-8">
     <title>bugfinder</title>
     <style>
@@ -15,22 +16,28 @@
         }
 
         body {
+          padding: 0;
+          margin: 0;
           font-size: 4rem;
           color: #020202;
+          font-family: 'Lato', sans-serif;
+          color: white;
         }
 
-        header {
+        /* header {
           width: 100%;
           margin-bottom: 2rem;
-        }
+        } */
 
         nav {
           text-align: center;
+          width: 100vw;
         }
 
         .nav-button {
-          margin: 0 2rem;
-          padding: 2rem;
+          /* margin: 0 2rem;
+          padding: 2rem; */
+          width: 100vw;
         }
 
         .nav-button.active {
@@ -47,20 +54,87 @@
         }
 
         .img{
-          position: relative;
+          /* position: relative; */
+          width: 10vh;
           /* top: 0;
           left: 0; */
         }
 
         .page {
-            padding: 3rem;
+            /* padding: 3rem; */
             display: none;
+            /* width: 600px; */
+            margin: 0 auto;
         }
 
         .page.active {
           display: block;
-          background: #a0cdc6;
+          background: red;
+          width: 100vw;
         }
+
+        .gobutton: link,
+        .gobutton:visited {
+
+          display: block;
+          text-decoration: none;
+
+          color: #FFF;
+          background-color: #5995DA;    /* Blue */
+          font-weight: bold;
+          padding-top: 20%;
+          text-align: center;
+          border: 2px solid #5D6063;    /* Dark gray */
+          border-radius: 5px;
+
+          width: 200px;
+          margin: 20px auto;
+        }
+
+        .gobutton:hover,
+        .button:visited:hover {
+          color: #FFF;
+          background-color: #76AEED;  /* Light blue */
+        }
+
+        .gobutton:active,
+        .gobutton:visited:active {
+          color: #FFF;
+          background-color: #5995DA;  /* Blue */
+
+        }
+
+        .gobutton{
+          border: 2px solid green;
+          background: #a0cdc6;
+          padding: .5%;
+          width: 30%;
+          align-items: center;
+        }
+        a:link {
+          color: blue;
+          text-decoration: none;
+        }
+        a:visited {
+          color: purple;
+        }
+        a:hover {
+          color: aqua;
+          text-decoration: underline;
+        }
+        a:active {
+          color: red;
+        }
+        a:visited:active {
+            color: red;
+          }
+          a:visited:hover {
+            color: orange;
+          }
+          .page-2{
+            .gobutton display: none;
+          }
+
 
 
 
@@ -76,17 +150,76 @@
           backgroud: #d2fff8;
         } */
     /* } */
+/* .box1{
+  height: 20%;
+  width: 100%;
+  background-color: pink;
+} */
 
+  .shared {
+    /* position: absolute; */
+    border: solid 1px black;
+  }
+
+  #new_thing {
+    top: 40%;
+    width: 100vw;
+    height: 300px;
+    background: orange;
+  }
+
+  #option_3 {
+    top: -32%;
+    width: 100vw;
+    height: 23vh;
+    background: cyan;
+  }
+
+  #option_4 {
+    top: 11.5%;
+    width: 100vw;
+    height: 23vh;
+    background: fuchsia;
+  }
+
+  #option_5 {
+    top: 55%;
+    width: 100vw;
+    height: 23vh;
+    background: fuchsia;
+  }
+
+  #option_6 {
+    top: 98.5%;
+    width: 100vw;
+    height: 23vh;
+    background: fuchsia;
+  }
+
+  #option_7 {
+    top: 142%;
+      width: 100vw;
+      height: 23vh;
+    background: fuchsia;
+  }
+
+  .new_page_class {
+    height: 100vh;
+  }
+
+  nav {
+    background: lime;
+    border: solid 1px black;
+  }
 
 
     </style>
   </head>
   <body>
-    <header>
-      <nav>
-        <a class="nav-button page-1 active">
+    <!-- <header>
+      <nav> -->
+        <!-- <a class="nav-button page-1 active">
           Page 1
-          <p><img src="bugsymbolwhitesmall.png"/></p>
         </a>
         <a class="nav-button page-2">
           Page 2
@@ -101,91 +234,45 @@
           Page 5
         </a>
         <a class="nav-button page-6">
-          Page 6
-        </a>
-      </nav>
-    </header>
-    <div class="swipe">
+          Page 6 -->
+        <!-- </a> -->
+      <!-- </nav>
+    </header> -->
+    <!-- <div class="swipe"> </div> -->
       <div class="page page-1 active">
-        PAGE 1
+        <nav><img src="bugsymbolwhitesmall.png" class="img"/></nav>
+         <div class="gobutton"> GO </div>
       </div>
-      <div class="page page-2">
-        PAGE 2
+
+
+      <div class="page page-2 new_page_class">
+        <nav><img src="bugsymbolwhitesmall.png" class="img"/></nav>
+        <div id='new_thing' class='shared'>
+          <div id='option_3' class='shared option'>Option 1</div>
+          <div id='option_4' class='shared option'>Option 2</div>
+          <div id='option_5' class='shared option'>Go to 3</div>
+          <div id='option_6' class='shared option'>Go to 4</div>
+          <div id='option_7' class='shared option'>Go to 5</div>
+        </div>
       </div>
-      <div class="page page-3">
+
+      <div class="page page-3 new_page_class">
         PAGE 3
       </div>
+
       <div class="page page-4">
         PAGE 4
       </div>
+
       <div class="page page-5">
         PAGE 5
       </div>
+
       <div class="page page-6">
         PAGE 6
       </div>
-    </div>
+
   </body>
   <script type="text/javascript" src="myscript.js"></script>
-  <script type="text/javascript">
-    var currentPage = 1;
-    var totalPages = 3;
-
-    var swipeZone = document.querySelector('.swipe');
-
-    swipedetect(swipeZone, function(direction){
-      // direction contains either "none", "left", "right", "top", or "down"
-      console.log('swiped ' + direction);
-
-      if (direction == 'left') {
-        if (currentPage <= 1) {
-          pageNumber = 1;
-        } else {
-          currentPage = currentPage - 1;
-        }
-
-        console.log(currentPage);
-        showPage('page-' + currentPage);
-      }
-
-      if (direction == 'right') {
-        if (currentPage >= totalPages) {
-          currentPage = totalPages;
-        } else {
-          currentPage = currentPage + 1;
-        }
-
-        console.log(currentPage);
-        showPage('page-' + currentPage);
-      }
-    });
-
-    var navButton1 = document.querySelector('.nav-button.page-1');
-    var navButton2 = document.querySelector('.nav-button.page-2');
-    var navButton3 = document.querySelector('.nav-button.page-3');
-    var navButton4 = document.querySelector('.nav-button.page-4');
-    var navButton5 = document.querySelector('.nav-button.page-5');
-    var navButton6 = document.querySelector('.nav-button.page-6');
-
-    navButton1.addEventListener('click', function() {
-      showPage('page-1');
-    })
-
-    navButton2.addEventListener('click', function() {
-      showPage('page-2');
-    })
-
-    navButton3.addEventListener('click', function() {
-      showPage('page-3');
-    })
-    navButton4.addEventListener('click', function() {
-      showPage('page-4');
-    })
-    navButton5.addEventListener('click', function() {
-      showPage('page-5');
-    })
-    navButton6.addEventListener('click', function() {
-      showPage('page-6');
-    })
-  </script>
+  <script type="text/javascript" src="new_script.js"></script>
 </html>

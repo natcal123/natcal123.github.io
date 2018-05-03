@@ -50,6 +50,12 @@ navButton1.addEventListener('click', function() {
   showPage('page-2');
 })
 
+var navButton1 = document.querySelector('.backarrow2');
+
+navButton1.addEventListener('click', function() {
+  showPage('page-3');
+})
+
 
 var options = document.getElementsByClassName('option');
 

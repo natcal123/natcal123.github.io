@@ -73,45 +73,40 @@
           width: 100vw;
         }
 
-        .gobutton: link,
-        .gobutton:visited {
+        /* .gobutton: link, */
+        /* .gobutton:visited {
 
           display: block;
           text-decoration: none;
 
           color: #FFF;
           background-color: #5995DA;    /* Blue */
-          font-weight: bold;
+          /* font-weight: bold;
           padding-top: 20%;
           text-align: center;
           border: 2px solid #5D6063;    /* Dark gray */
-          border-radius: 5px;
+          /* border-radius: 5px;
 
           width: 200px;
           margin: 20px auto;
-        }
+        } */ */ */
 
-        .gobutton:hover,
+        /* .gobutton:hover,
         .button:visited:hover {
           color: #FFF;
           background-color: #76AEED;  /* Light blue */
-        }
+        } */
 
-        .gobutton:active,
+        /* .gobutton:active,
         .gobutton:visited:active {
           color: #FFF;
           background-color: #5995DA;  /* Blue */
 
-        }
+        } */
 
-        .gobutton{
-          border: 2px solid green;
-          background: #a0cdc6;
-          padding: .5%;
-          width: 30%;
-          align-items: center;
-        }
-        a:link {
+
+
+        /* a:link {
           color: blue;
           text-decoration: none;
         }
@@ -130,7 +125,8 @@
           }
           a:visited:hover {
             color: orange;
-          }
+          } */
+
           .page-2{
             .gobutton display: none;
           }
@@ -164,7 +160,7 @@
   #new_thing {
     top: 40%;
     width: 100vw;
-    height: 300px;
+    height: 100vh;
     background: orange;
   }
 
@@ -212,6 +208,66 @@
     border: solid 1px black;
   }
 
+  .gobutton {
+    border: 2px solid green;
+    background: purple;
+    /* padding: .5%; */
+    width: 50vw;
+    height: 50px;
+    /* align-text: center; */
+    margin-left: auto;
+   margin-right: auto;
+  }
+
+  .gobutton.textforbutton{
+    margin: 0;
+   position: absolute;
+   top: 60%;
+   left: 50%;
+   margin-right: -50%;
+   transform: translate(-50%, -50%)
+  }
+
+#textcenter{
+  text-align: center;
+}
+
+.yassuretext {
+  top: 500%;
+  /* border: 1px solid green; */
+  text-align: center;
+  width: 94vw;
+  height: auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+
+  }
+
+.gobutton2{
+  border: 1px solid green;
+  background: purple;
+  /* top: 60%; */
+  /* padding: .5%; */
+  width: 100vw;
+  height: 50px;
+  /* align-text: center; */
+  /* margin-left: auto;
+ margin-right: auto; */
+}
+
+.gobutton2.textforbutton{
+  /* margin: 0; */
+ position: absolute;
+ top: 60%;
+ /* left: 1.5%; */
+ /* margin-right: -50%;
+ transform: translate(-50%, -50%) */
+}
+
+
+
 
     </style>
   </head>
@@ -239,9 +295,13 @@
       <!-- </nav>
     </header> -->
     <!-- <div class="swipe"> </div> -->
-      <div class="page page-1 active">
+      <div class="page page-1 active new_page_class">
         <nav><img src="bugsymbolwhitesmall.png" class="img"/></nav>
-         <div class="gobutton"> GO </div>
+        <div id='new_thing' class='shared'>
+         <div class="gobutton textforbutton">
+           <div id='textcenter'> EXPLORE </div>
+              </div>
+           </div>
       </div>
 
 
@@ -257,7 +317,16 @@
       </div>
 
       <div class="page page-3 new_page_class">
-        PAGE 3
+        <nav><img src="bugsymbolwhitesmall.png" class="img"/></nav>
+        <div id='new_thing' class='shared'>
+          <div class='yassuretext'>
+            <p>Spin to the habitat of the pointed
+            lady butterfly.</p>
+        </div>
+          <div class="gobutton2 textforbutton">
+             <div id='textcenter'> GO </div>
+           </div>
+            </div>
       </div>
 
       <div class="page page-4">

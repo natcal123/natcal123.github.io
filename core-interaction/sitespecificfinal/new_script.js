@@ -38,6 +38,12 @@ navButton1.addEventListener('click', function() {
   showPage('page-2');
 })
 
+var navButton1 = document.querySelector('.gobutton2');
+
+navButton1.addEventListener('click', function() {
+  showPage('page-4');
+})
+
 var options = document.getElementsByClassName('option');
 
 for (var i = 0; i < options.length; i++) {

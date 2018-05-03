@@ -41,7 +41,7 @@ navButton1.addEventListener('click', function() {
 var navButton1 = document.querySelector('.gobutton2');
 
 navButton1.addEventListener('click', function() {
-  showPage('page-4');
+  showPage('page-3-1');
 })
 
 var navButton1 = document.querySelector('.backarrow');

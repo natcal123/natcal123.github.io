@@ -56,13 +56,28 @@ navButton1.addEventListener('click', function() {
   showPage('page-3');
 })
 
+
 var navButton1 = document.querySelector('.gobutton3');
 
 navButton1.addEventListener('click', function() {
   showPage('page-3-2');
 })
 
-var navButton1 = document.querySelector('.page-3-2');
+
+var navButton1 = document.querySelector('.backarrow3');
+
+navButton1.addEventListener('click', function() {
+  showPage('page-3-1');
+})
+
+
+var navButton1 = document.querySelector('.backarrow4');
+
+navButton1.addEventListener('click', function() {
+  showPage('page-3-2');
+})
+
+var navButton1 = document.querySelector('#new_thing2_2');
 
 navButton1.addEventListener('click', function() {
   showPage('page-3-3');

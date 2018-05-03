@@ -56,6 +56,11 @@ navButton1.addEventListener('click', function() {
   showPage('page-3');
 })
 
+var navButton1 = document.querySelector('.gobutton3');
+
+navButton1.addEventListener('click', function() {
+  showPage('page-3-2');
+})
 
 var options = document.getElementsByClassName('option');
 

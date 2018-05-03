@@ -211,8 +211,11 @@
   }
 
   nav {
-    background: #a0cdc6;
+ /* box-shadow: 0px 43px 16px 12px rgba(0,0,0,0.1);
+ box-shadow: 0px 43px 16px 12px rgba(0,0,0,0.1);
+ box-shadow: 0px 43px 16px 12px rgba(0,0,0,0.1); */
     border: solid 1px #a0cdc6;
+    background:#a0cdc6;
   }
 
   .gobutton {
@@ -273,6 +276,45 @@
  transform: translate(-50%, -50%) */
 }
 
+@keyframes blink {
+	0% {opacity: 0}
+	25%{opacity: .25}
+  50%{opacity: .50}
+  75%{opacity: .75}
+	100% {opacity: 1}
+}
+
+.gobutton3{
+  border: 1px solid #84b6ab;
+  background: #a0cdc6;
+  /* top: 60%; */
+  /* padding: .5%; */
+  width: 100vw;
+  height: 80px;
+  /* align-text: center; */
+  /* margin-left: auto;
+ margin-right: auto; */
+ animation: blink 2s infinite;
+}
+
+@keyframes blink {
+  0% {opacity: 0}
+  25%{opacity: .25}
+  50%{opacity: .50}
+  75%{opacity: .75}
+  100% {opacity: 1}
+}
+
+.gobutton3.textforbutton{
+  /* margin: 0; */
+ /* position: absolute; */
+ top: 60%;
+ /* left: 1.5%; */
+ /* margin-right: -50%;
+ transform: translate(-50%, -50%) */
+ animation: blink 2s infinite;
+}
+
 .backarrow{
   width: 116px;
   position: absolute;
@@ -282,19 +324,112 @@
 }
 
 .backarrow2{
+  width: 116px;
+  position: absolute;
   float: left;
-  padding-top: 2vh;
+  top: -2px;
+  left:-18px;
 }
 
 .mapbox{
   text-align: center;
   width: 100vw;
 }
+
 .mappin{
   width: 30vh;
   height: auto;
 }
 
+.directiontext{
+  top: 500%;
+  /* border: 1px solid green; */
+  text-align: center;
+  width: 94vw;
+  height: auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  color: #aee3d9;
+  /* color: #aee3d9; */
+}
+
+#circles{
+  height: 27vh;
+  width: auto;
+  text-align: center;
+  /* text-align: center;
+  width: auto;
+  height: 27vh; */
+  padding-left: 30vw;
+  padding-right: 3vw;
+  padding-top: 0vh;
+  padding-bottom: 3vh;
+}
+
+#alwaysmoving{
+  height: 27vh;
+  width: auto;
+  text-align: center;
+  /* text-align: center;
+  width: auto;
+  height: 27vh; */
+  padding-left: 30vw;
+  padding-right: 3vw;
+  padding-top: 0vh;
+  padding-bottom: 3vh;
+}
+
+#up{
+  height: 27vh;
+  width: auto;
+  text-align: center;
+  /* text-align: center;
+  width: auto;
+  height: 27vh; */
+  padding-left: 30vw;
+  padding-right: 3vw;
+  padding-top: 0vh;
+  padding-bottom: 3vh;
+}
+
+#jump{
+  height: 27vh;
+  width: auto;
+  text-align: center;
+  /* text-align: center;
+  width: auto;
+  height: 27vh; */
+  padding-left: 30vw;
+  padding-right: 3vw;
+  padding-top: 0vh;
+  padding-bottom: 3vh;
+}
+
+#shiver{
+  height: 27vh;
+  width: auto;
+  text-align: center;
+  /* text-align: center;
+  width: auto;
+  height: 27vh; */
+  padding-left: 30vw;
+  padding-right: 3vw;
+  padding-top: 0vh;
+  padding-bottom: 3vh;
+}
+
+.checkbox{
+  text-align: center;
+  width: 100vw;
+}
+
+.checkmark{
+  width: 30vh;
+  height: auto;
+
+}
 
     </style>
   </head>
@@ -335,11 +470,11 @@
       <div class="page page-2 new_page_class">
         <nav><img src="bugsymbolwhitesmall.png" class="img"/></nav>
         <div id='new_thing' class='shared'>
-          <div id='option_3' class='shared option'>Option 1</div>
-          <div id='option_4' class='shared option'>Option 2</div>
-          <div id='option_5' class='shared option'>Go to 3</div>
-          <div id='option_6' class='shared option'>Go to 4</div>
-          <div id='option_7' class='shared option'>Go to 5</div>
+          <div id='option_3' class='shared option'><img src="circles.png" id="circles"/></div>
+          <div id='option_4' class='shared option'><img src="up.png" id="up"/></div>
+          <div id='option_5' class='shared option'><img src="jump.png" id="jump"/></div>
+          <div id='option_6' class='shared option'><img src="shiver.png" id="shiver"/></div>
+          <div id='option_7' class='shared option'><img src="alwaysmoving.png" id="alwaysmoving"/></div>
         </div>
       </div>
 
@@ -361,13 +496,25 @@
 
       <div class="page page-3-1 new_page_class">
         <nav><img src="backarrow.png" class="backarrow2"/><img src="bugsymbolwhitesmall.png" class="img"/></nav>
-        <div id='new_thing' class='shared'>
+        <div id='new_thing2' class='shared'>
           <div class="mapbox"> <img src="mappin.png" class="mappin"/> </div>
           <div class='directiontext'>
             <p>DIRECTIONS DIRECTIONS DIRECTIONS .</p>
         </div>
+        <div class="gobutton3 textforbutton">
+           <div id='textcenter'> IM HERE </div>
+         </div>
             </div>
       </div>
+
+      <div class="page page-3-2 new_page_class">
+        <nav><img src="backarrow.png" class="backarrow2"/><img src="bugsymbolwhitesmall.png" class="img"/></nav>
+        <div id='new_thing' class='shared'>
+          <div class="checkbox" class="checkmark"> <img src="checkmark.png" /> </div>
+         </div>
+            </div>
+      </div>
+
 
       <div class="page page-4">
         PAGE 4

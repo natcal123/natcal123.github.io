@@ -62,6 +62,18 @@ navButton1.addEventListener('click', function() {
   showPage('page-3-2');
 })
 
+var navButton1 = document.querySelector('.page-3-2');
+
+navButton1.addEventListener('click', function() {
+  showPage('page-3-3');
+})
+
+var navButton1 = document.querySelector('.swipeuparrow');
+
+navButton1.addEventListener('click', function() {
+  showPage('page-2');
+})
+
 var options = document.getElementsByClassName('option');
 
 for (var i = 0; i < options.length; i++) {

@@ -38,6 +38,18 @@ navButton1.addEventListener('click', function() {
   showPage('page-2');
 })
 
+var options = document.getElementsByClassName('option');
+
+for (var i = 0; i < options.length; i++) {
+  options[i].addEventListener('click', navigate);
+}
+
+function navigate() {
+  var clicked_option = this.id.slice(-1);
+  showPage('page-' + clicked_option)
+
+}
+
 var navButton1 = document.querySelector('.gobutton2');
 
 navButton1.addEventListener('click', function() {
@@ -88,15 +100,3 @@ var navButton1 = document.querySelector('.swipeuparrow');
 navButton1.addEventListener('click', function() {
   showPage('page-2');
 })
-
-var options = document.getElementsByClassName('option');
-
-for (var i = 0; i < options.length; i++) {
-  options[i].addEventListener('click', navigate);
-}
-
-function navigate() {
-  var clicked_option = this.id.slice(-1);
-  showPage('page-' + clicked_option)
-
-}

@@ -160,9 +160,28 @@
   #new_thing {
     top: 40%;
     width: 100vw;
-    height: 100vh;
+    height: 110vh;
     background: #d2fff8;
   }
+
+#welcome{
+  text-align: center;
+}
+
+.welcomeinfo{
+  top: 500%;
+  /* border: 1px solid green; */
+  /* text-align: center; */
+  font-size: .5em;
+  line-height: 1.25em;
+  width: 94vw;
+  height: auto;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+  color: #aee3d9;
+}
 
   #new_thing2 {
     top: 40%;
@@ -170,6 +189,22 @@
     height: 100vh;
     background: white;
   }
+
+  @keyframes buttergif {
+      0%   {opacity: 1;}
+      90%  {opacity: 1;}
+      100% {opacity: 0;}
+  }
+
+.butterflygif{
+  animation: buttergif 3s forwards;
+  position:absolute;
+  /* padding-left: 20%; */
+  width: 100%;
+   height: auto;
+   text-align: center;
+
+}
 
   #new_thing2_2 {
     top: 40%;
@@ -223,25 +258,45 @@
  box-shadow: 0px 43px 16px 12px rgba(0,0,0,0.1); */
     border: solid 1px #a0cdc6;
     background:#a0cdc6;
+
+    /* background: rgba(185,247,237,1);
+background: -moz-linear-gradient(top, rgba(185,247,237,1) 0%, rgba(135,171,165,1) 100%);
+background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(185,247,237,1)), color-stop(100%, rgba(135,171,165,1)));
+background: -webkit-linear-gradient(top, rgba(185,247,237,1) 0%, rgba(135,171,165,1) 100%);
+background: -o-linear-gradient(top, rgba(185,247,237,1) 0%, rgba(135,171,165,1) 100%);
+background: -ms-linear-gradient(top, rgba(185,247,237,1) 0%, rgba(135,171,165,1) 100%);
+background: linear-gradient(to bottom, rgba(185,247,237,1) 0%, rgba(135,171,165,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9f7ed', endColorstr='#87aba5', GradientType=0 ); */
   }
 
   .gobutton {
     border: 2px solid #84b6ab;
     background: #a0cdc6;
+    /* background: rgba(210,255,82,1);
+    background: -moz-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(182,227,148,1) 57%, rgba(160,205,198,1) 100%);
+    background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(210,255,82,1)), color-stop(57%, rgba(182,227,148,1)), color-stop(100%, rgba(160,205,198,1)));
+    background: -webkit-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(182,227,148,1) 57%, rgba(160,205,198,1) 100%);
+    background: -o-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(182,227,148,1) 57%, rgba(160,205,198,1) 100%);
+    background: -ms-radial-gradient(center, ellipse cover, rgba(210,255,82,1) 0%, rgba(182,227,148,1) 57%, rgba(160,205,198,1) 100%);
+    background: radial-gradient(ellipse at center, rgba(210,255,82,1) 0%, rgba(182,227,148,1) 57%, rgba(160,205,198,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#a0cdc6', GradientType=1 ); */
     /* padding: .5%; */
     width: 60vw;
     height: 80px;
+    position:absolute;
+    /* bottom:0; */
     /* align-text: center; */
-    margin-left: auto;
-   margin-right: auto;
+    /* margin-left: auto;
+   margin-right: auto; */
   }
 
   .gobutton.textforbutton{
-    margin: 0;
+    /* bottom:1; */
+  margin: 0;
    position: absolute;
-   top: 60%;
+   /* top: 60%; */
    left: 50%;
-   margin-right: -50%;
+   /* margin-right: -50%; */
    transform: translate(-50%, -50%)
   }
 
@@ -249,6 +304,40 @@
   text-align: center;
 }
 
+#new_thing3 {
+  top: 40%;
+  width: 100vw;
+  height: 400vh;
+  background: #d2fff8;
+}
+
+#new_thing4 {
+  top: 40%;
+  width: 100vw;
+  height: 400vh;
+  background: #b9eee4;
+}
+
+#new_thing5 {
+  top: 40%;
+  width: 100vw;
+  height: 400vh;
+  background: #a0cdc6;
+}
+
+#new_thing6 {
+  top: 40%;
+  width: 100vw;
+  height: 400vh;
+  background: #84b6ab;
+}
+
+#new_thing7 {
+  top: 40%;
+  width: 100vw;
+  height: 400vh;
+  background: #6ba08c;
+}
 .yassuretext {
   top: 500%;
   /* border: 1px solid green; */
@@ -265,6 +354,7 @@
 .gobutton2{
   border: 1px solid #84b6ab;
   background: #a0cdc6;
+    position:absolute;
   /* top: 60%; */
   /* padding: .5%; */
   width: 100vw;
@@ -275,12 +365,13 @@
 }
 
 .gobutton2.textforbutton{
-  /* margin: 0; */
+  /* bottom:1; */
+margin: 0;
  position: absolute;
- top: 60%;
- /* left: 1.5%; */
- /* margin-right: -50%;
- transform: translate(-50%, -50%) */
+ /* top: 60%; */
+ left: 50%;
+ /* margin-right: -50%; */
+ transform: translate(-50%, -50%)
 }
 
 @keyframes blink {
@@ -401,76 +492,96 @@
 }
 
 #circles{
-  height: 27vh;
+  height: 20vh;
   width: auto;
   text-align: center;
   /* text-align: center;
   width: auto;
   height: 27vh; */
-  padding-left: 30vw;
+  padding-left: 42vw;
   padding-right: 3vw;
-  padding-top: 0vh;
+  padding-top: 1.5vh;
   padding-bottom: 3vh;
-  transform: rotate(0deg);
-  transition: all 500ms;
+  /* transform: rotate(0deg);
+  transition: all 500ms; */
 }
 
-#circles.onclick{
+/* #circles.onclick{
   height: 35vh;
     transform: rotate(180deg);
     width: auto;
-}
+} */
 
 #alwaysmoving{
-  height: 27vh;
+  height: 18vh;
   width: auto;
   text-align: center;
   /* text-align: center;
   width: auto;
   height: 27vh; */
-  padding-left: 30vw;
+  padding-left: 34vw;
   padding-right: 3vw;
-  padding-top: 0vh;
+  padding-top: 2.5vh;
   padding-bottom: 3vh;
 }
 
 #up{
-  height: 27vh;
+  height: 18vh;
   width: auto;
   text-align: center;
   /* text-align: center;
   width: auto;
   height: 27vh; */
-  padding-left: 30vw;
+  padding-left: 34vw;
   padding-right: 3vw;
-  padding-top: 0vh;
+  padding-top: 2.5vh;
   padding-bottom: 3vh;
 }
 
 #jump{
-  height: 27vh;
+  height: 18vh;
   width: auto;
   text-align: center;
   /* text-align: center;
   width: auto;
   height: 27vh; */
-  padding-left: 30vw;
+  padding-left: 34vw;
   padding-right: 3vw;
-  padding-top: 0vh;
+  padding-top: 2.5vh;
   padding-bottom: 3vh;
 }
 
 #shiver{
-  height: 27vh;
+  height: 18vh;
   width: auto;
   text-align: center;
   /* text-align: center;
   width: auto;
   height: 27vh; */
-  padding-left: 30vw;
+  padding-left: 34vw;
   padding-right: 3vw;
-  padding-top: 0vh;
+  padding-top: 2.5vh;
   padding-bottom: 3vh;
+}
+
+.movement_1{
+  font-size:
+}
+
+.movement_2{
+  font-size:
+}
+
+.movement_3{
+  font-size:
+}
+
+.movement_4{
+  font-size:
+}
+
+.movement_5{
+  font-size:
 }
 
 .checkbox{
@@ -572,8 +683,16 @@ animation: blink2 2s infinite;
       <div class="page page-1 active new_page_class">
         <nav><img src="bugsymbolwhitesmall.png" class="img"/></nav>
         <div id='new_thing' class='shared'>
+          <div class="butterflygif"> <img src="butterflies2.gif"/> </div>
+          <div class="welcomeinfo">
+            <p id="welcome">Welcome!</p>
+<p>This interface prompts users to create movement based performance throughout Washington Square park in New York City. There are five sets of movements to choose from. Each movement is based on the  patterns of a specific insect species living throughout the park!</p>
+
+<p>This is a way to deepen our connection with nature within the city and become aware of how beings navigate the world. </p>
+</div>
+
          <div class="gobutton textforbutton">
-           <div id='textcenter'> EXPLORE </div>
+           <div id='textcenter'> EXPLORE! </div>
               </div>
            </div>
       </div>
@@ -595,18 +714,30 @@ animation: blink2 2s infinite;
           <div><img src="bugsymbolwhitesmall.png" class="img"/></div>
           </nav>
           <div><img src="backarrow.png" class="backarrow"/></div>
-        <div id='new_thing2' class='shared'>
-          <div class='yassuretext'>
-            <p>Spin to the habitat of the pointed
-            lady butterfly.</p>
+        <div id='new_thing3' class='shared'>
+          <div class='movement_1'>
+            <p>SPECIES: The Painted Lady Butterfly</p>
+
+            <p>MOVEMENT: WALK OR RUN IN CIRCLES AROUND A PERSON OR A CHOSEN AREA FOR 5 SECONDS</p>
+
+            <div class="gobutton3 textforbutton">
+               <div id='textcenter'> WOO! I DID IT! </div>
+             </div>
+
+            <p><br>BEHIND THE MOVEMENT:</br>
+              These butterflies fly in circles around each other for up to 5 seconds before parting ways, to symbolize courtship.</p>
+
+            <p><br>HABITAT:</br>
+              The painted lady likes eating nectar flowers including goldenrods, marigolds and everlastings. They are seen in a variety of habitats except very dense forests.</p>
         </div>
+
           <div class="gobutton2 textforbutton">
              <div id='textcenter'> GO </div>
            </div>
             </div>
       </div>
 
-      <div class="page page-3-1 new_page_class">
+      <!-- <div class="page page-3-1 new_page_class">
         <nav><img src="backarrow.png" class="backarrow2"/><img src="bugsymbolwhitesmall.png" class="img"/></nav>
         <div id='new_thing2' class='shared'>
           <div class="mapbox"> <img src="mappin.png" class="mappin"/> </div>
@@ -643,20 +774,107 @@ animation: blink2 2s infinite;
         <div class="swipeuparrowbox"> <img src="swipeuparrow.png" class="swipeuparrow"/> </div>
          </div>
             </div>
-      </div>
+      </div> -->
 
 
 
       <div class="page page-4">
-        PAGE 4
+        <nav>
+          <div><img src="bugsymbolwhitesmall.png" class="img"/></div>
+          </nav>
+          <div><img src="backarrow.png" class="backarrow"/></div>
+          <div id='new_thing4' class='shared'>
+            <div class='movement_2'>
+
+              <p>SPECIES: Monarch Butterfly </p>
+
+              <p>MOVEMENT: FIND A GRASSY SPOT CLOSE TO YOU. BEND INTO A SQUAT POSITION AND JUMP UP. </p>
+
+              <p><br>BEHIND THE MOVEMENT:</br>
+                Monarchs collect moisture and minerals from damp soil and gravel through a process called mudpuddling, where they sit on the ground and suck up the moisture. </p>
+
+              <p><br>HABITAT:</br>
+                 While breeding, monarchs can be seen in urban and suburban areas, gardens, trees, and roadsides. Larvae only eat milkweed but adults eat the sector of a variety of plants including coneflowers, goldenrod, and lilac. </p>
+          </div>
+
+          <div class="gobutton2 textforbutton">
+             <div id='textcenter'> GO </div>
+           </div>
+            </div>
       </div>
+
 
       <div class="page page-5">
-        PAGE 5
+        <nav>
+          <div><img src="bugsymbolwhitesmall.png" class="img"/></div>
+          </nav>
+          <div><img src="backarrow.png" class="backarrow"/></div>
+        <div id='new_thing5' class='shared'>
+          <div class='movement_3'>
+            <p>SPECIES: The House Centipede </p>
+
+            <p>MOVEMENT: JUMP FIVE TIMES TO THE RIGHT OF WHERE YOU ARE STANDING. </p>
+
+            <p><br>BEHIND THE MOVEMENT:</br>
+              These centipedes capture their prey by jumping onto them. </p>
+
+            <p><br>HABITAT:</br>
+               They live primarily under large rocks, wood piles and compost piles. </p>
+        </div>
+          <div class="gobutton2 textforbutton">
+             <div id='textcenter'> GO </div>
+           </div>
+            </div>
       </div>
 
+
       <div class="page page-6">
-        PAGE 6
+        <nav>
+          <div><img src="bugsymbolwhitesmall.png" class="img"/></div>
+          </nav>
+          <div><img src="backarrow.png" class="backarrow"/></div>
+        <div id='new_thing6' class='shared'>
+          <div class='movement_4'>
+
+              <p>SPECIES: The Western Honey Bee </p>
+
+            <p>MOVEMENT: DO AN EXAGGERATED SHIVER, THEN WALK 10 STEPS  IN FRONT OF YOU AND DO ANOTHER SHIVER.  </p>
+
+            <p><br>BEHIND THE MOVEMENT:</br>
+              This species can fly within a 86 °F temperature range. It does this through shivering! It shivers before flight and stops for more shivering.   </p>
+
+            <p><br>HABITAT:</br>
+               These bees like to hang out in gardens, woodlands, meadows, and anywhere where there are flowering plants. </p>
+        </div>
+          <div class="gobutton2 textforbutton">
+             <div id='textcenter'> GO </div>
+           </div>
+            </div>
+      </div>
+
+
+      <div class="page page-7">
+        <nav>
+          <div><img src="bugsymbolwhitesmall.png" class="img"/></div>
+          </nav>
+          <div><img src="backarrow.png" class="backarrow"/></div>
+        <div id='new_thing7' class='shared'>
+          <div class='movement_5'>
+
+            <p>SPECIES: The Black Swallowtail Butterfly </p>
+
+            <p>MOVEMENT:  <br>MOVE IN ALL DIRECTIONS! STAY WHERE YOU ARE STANDING AND MOVE ARMS, LEGS, HEAD, AND ABDOMEN IN ANY WAY THAT YOU WOULD LIKE. </br></p>
+
+            <p><br>BEHIND THE MOVEMENT:</br>
+              This species needs to be 24 degrees celsius to fly. In order to do this, they have special behavioral patterns of moving wing position, orientation to the sun, and abdomen position just to name a few. They are always moving! </p>
+
+            <p><br>HABITAT:</br>
+               They like feeding on the celery, carrot or parsley family along with citrus plants and aromatic evergreen trees and shrubs.  </p>
+        </div>
+          <div class="gobutton2 textforbutton">
+             <div id='textcenter'> GO </div>
+           </div>
+            </div>
       </div>
 
   </body>

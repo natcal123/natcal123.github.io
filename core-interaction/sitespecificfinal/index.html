@@ -18,7 +18,7 @@
         body {
           padding: 0;
           margin: 0;
-          font-size: 6rem;
+          font-size: 11rem;
           color: #020202;
           /* font-family: 'Lato', sans-serif; */
           font-family: Helvetica Neue;
@@ -162,7 +162,7 @@
   #new_thing_01 {
     top: 40%;
     width: 100vw;
-    height: 200vh;
+    height: auto;
     /* background: #ff8a2a; */
     /* background: #d2fff8; */
     background: #e8fbf8 ;
@@ -171,7 +171,7 @@
   #new_thing {
     top: 40%;
     width: 100vw;
-    height: 118vh;
+    height: auto;
     /* background: #ff8a2a; */
     /* background: #d2fff8; */
     background: #e8fbf8 ;
@@ -197,10 +197,10 @@
   top: 500%;
   /* border: 1px solid green; */
   /* text-align: center; */
-  font-size: .7em;
+  font-size: 7rem;
   line-height: 1.25em;
   /* width: 94vw; */
-  height: auto;
+  height: 100vh;
   padding-left: 3vw;
   padding-right: 3vw;
   padding-top: 3vh;
@@ -221,7 +221,7 @@ font-family: Helvetica Neue;
   #new_thing2 {
     top: 40%;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background: white;
   }
 
@@ -244,7 +244,7 @@ font-family: Helvetica Neue;
   #new_thing2_2 {
     top: 40%;
     width: 100vw;
-    height: 100vh;
+    height: auto;
     background: white;
   }
 
@@ -307,6 +307,13 @@ background: linear-gradient(to bottom, rgba(185,247,237,1) 0%, rgba(135,171,165,
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9f7ed', endColorstr='#87aba5', GradientType=0 ); */
   }
 
+.fixedatbottom{
+  width: 100vw;
+  height: 10vh;
+  bottom: -10;
+  position: absolute;
+  background: #e8fbf8;
+}
   .gobutton {
     border: 2px solid white;
     /* border: 2px solid #84b6ab; */
@@ -321,8 +328,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9f7ed', end
     background: radial-gradient(ellipse at center, rgba(210,255,82,1) 0%, rgba(182,227,148,1) 57%, rgba(160,205,198,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d2ff52', endColorstr='#a0cdc6', GradientType=1 ); */
     /* padding: .5%; */
-    width: 60vw;
-    height: 80px;
+    width: 80vw;
+    height: 160px;
     /* position:absolute; */
     /* position: relative; */
     /* bottom:0; */
@@ -330,8 +337,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9f7ed', end
     /* margin-left: auto;
    margin-right: auto; */
    font-family: Helvetica Neue;
-   bottom: 0;
-   position: fixed;
+   bottom: -3vh;
+   position: absolute;
   }
 
   .gobutton.textforbutton{
@@ -354,35 +361,35 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b9f7ed', end
 #new_thing3 {
   top: 40%;
   width: 100vw;
-  height: 210vh;
+  height: auto;
   background: #d2fff8;
 }
 
 #new_thing4 {
   top: 40%;
   width: 100vw;
-  height: 159vh;
+  height: auto;
   background: #b9eee4;
 }
 
 #new_thing5 {
   top: 40%;
   width: 100vw;
-  height: 159vh;
+  height:auto;
   background: #a0cdc6;
 }
 
 #new_thing6 {
   top: 40%;
   width: 100vw;
-  height: 159vh;
+  height: auto;
   background: #84b6ab;
 }
 
 #new_thing7 {
   top: 40%;
   width: 100vw;
-  height: 159vh;
+  height: auto;
   background: #6ba08c;
 }
 .yassuretext {
@@ -1047,8 +1054,11 @@ animation: blink2 2s infinite;
 <p>This is a way to deepen our connection with nature within the city and become aware of how beings navigate the world. </p>
 </div>
 
+<div class="fixedatbottom">
          <div class="gobutton textforbutton">
            <div id='textcenter'> EXPLORE! </div>
+              </div>
+
               </div>
            </div>
       </div>
